@@ -27,7 +27,7 @@ describe("Codigo Secreto", () => {
   });
   it("si jugador A ingresa numero 3412 y el B ingresa 7604 deberia retornar * ", () => {    
     let juego = new vacaToro();
-    expect(juego.compararCodigo(3412,7604)).toEqual("*");
+    expect(juego.compararCodigo(3412,7604)).toEqual("#*");
   });
   
   it("si jugador A ingresa numero 9231 y el B ingresa 1708 deberia retornar ** ", () => {    
@@ -36,7 +36,7 @@ describe("Codigo Secreto", () => {
   });  
   it("si jugador A ingresa numero 8125 y el B ingresa 4065 deberia retornar ! ", () => {  
     let juego = new vacaToro();  
-    expect(juego.compararCodigo(8125,4065)).toEqual("!");
+    expect(juego.compararCodigo(8125,4065)).toEqual("!#");
   });
   it("si jugador A ingresa numero 1234 y el B ingresa 1530 deberia retornar !! ", () => {    
     let juego = new vacaToro();
@@ -44,7 +44,7 @@ describe("Codigo Secreto", () => {
   });
   it("si jugador A ingresa numero 9165 y el B ingresa 9053 deberia retornar !* ", () => {    
     let juego = new vacaToro();
-    expect(juego.compararCodigo(9165,9053)).toEqual("!*");
+    expect(juego.compararCodigo(9165,9053)).toEqual("!##*");
   });
   it("si jugador A ingresa numero 12334  y el B ingresa 36589 deberia retornar * ", () => {    
     let juego = new vacaToro();
@@ -73,7 +73,7 @@ describe("Codigo Secreto", () => {
   
   it("si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!*#'", () => {
     let juego = new vacaToro();    
-    expect(juego.compararCodigo(9165,9053)).toEqual("!*#");
+    expect(juego.compararCodigo(9165,9053)).toEqual("!##*");
   });
   
   //si el codigo es 1111 y el jugador b coloca 1123
