@@ -1,4 +1,25 @@
 class vacaToro{
+     buscaPrimos(codigo){
+        const codVec1 = this.separarCodigo(codigo);
+        let resp = "";
+        for(var i = 0;i<codVec1.length;i++){
+            if(this.primo(codVec1[i])){
+                resp = "%"
+            }
+        }   
+        
+        return resp;
+    }
+
+     primo(num) {
+        for (var i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return num !== 1;
+      }
+
     mensajeFelicidades(){
         return "Felicidades Adivinaste El codigo";
     }
