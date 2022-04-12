@@ -71,6 +71,11 @@ describe("Codigo Secreto", () => {
     expect(juego.compararCodigo('12b1c','a2t1c')).toEqual("!!!");
   });
   
+  it("si jugador A ingresa numero 9165  y el B ingresa 9053 deberia retornar '!*#'", () => {
+    let juego = new vacaToro();    
+    expect(juego.compararCodigo(9165,9053)).toEqual("!*#");
+  });
+  
   //si el codigo es 1111 y el jugador b coloca 1123
   // Que pasa si el es codigo repetido que debe mostrar :v ?  
 });
